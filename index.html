@@ -53,39 +53,69 @@
             <div class="item-container">
             <span class="icon"><i style="font-size:24px" class="fa">&#xf185;</i></span>
             <span class="drop1">Set wakeup Time</span>
-            <select name="drop" id="drop">
-                <option value="8AM-9AM">8AM - 9AM</option>
-                <option value="9AM - 10AM">9AM - 10AM</option>
-                <option value="10AM - 11AM">10AM - 11AM</option>
-                <option value="11AM - 12PM">11AM - 12PM</option>
+            <select name="drop" class="drop" id="drop1">
+                <option value="null">Select an option</option>
+
+                <option value="0-2">12 AM-02 AM</option>
+                <option value="2-4">02 AM-04 AM</option>
+                <option value="4-6">04 AM-06 AM</option>
+                <option value="6-8">06 AM-08AM</option>
+                <option value="8-10">08 AM-10 AM</option>
+                <option value="10-12">10 AM-12 AM</option>
+                <option value="12-14">12 PM-02 PM</option>
+                <option value="14-16">02 PM-04 PM</option>
+                <option value="16-18">04 PM-06 PM</option>
+                <option value="18-20">06 PM-08 PM</option>
+                <option value="20-22">08 PM-10 PM</option>
+                <option value="22-24">10 PM-12 PM</option>
             </select>
             <div class="empty"></div>
 
             <span><i style="font-size:24px" class="fa">&#xf0f5;</i></span>
             <span class="drop1">Set Lunch Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <select name="drop" id="drop">
-                <option class="opt" value="8AM-9AM">10AM - 11AM</option>
-                <option value="11AM - 12PM">11AM - 12PM</option>
-                <option value="8AM-9AM">12PM - 1AM</option>
-                <option value="8AM-9AM">1PM - 2PM</option>
+            <select name="drop" class="drop" id="drop2">
+                <option value="null">Select an option</option>
+
+                <option value="0-2">12 AM-02 AM</option>
+                <option value="2-4">02 AM-04 AM</option>
+                <option value="4-6">04 AM-06 AM</option>
+                <option value="6-8">06 AM-08AM</option>
+                <option value="8-10">08 AM-10 AM</option>
+                <option value="10-12">10 AM-12 AM</option>
+                <option value="12-14">12 PM-02 PM</option>
+                <option value="14-16">02 PM-04 PM</option>
+                <option value="16-18">04 PM-06 PM</option>
+                <option value="18-20">06 PM-08 PM</option>
+                <option value="20-22">08 PM-10 PM</option>
+                <option value="22-24">10 PM-12 PM</option>
             </select>
             <div class="empty"></div>
 
             <i style="font-size:24px" class="fa">&#xf236;</i>
             <span class="drop1">Set Nap Time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <select name="drop" id="drop">
-                <option value="8AM-9AM">10AM - 11AM</option>
-                <option value="11AM - 12PM">11AM - 12PM</option>
-                <option value="8AM-9AM">12PM - 1AM</option>
-                <option value="8AM-9AM">1PM - 2PM</option>
+            <select name="drop" class="drop" id="drop3">
+                <option value="null">Select an option</option>
+
+                <option value="0-2">12 AM-02 AM</option>
+                <option value="2-4">02 AM-04 AM</option>
+                <option value="4-6">04 AM-06 AM</option>
+                <option value="6-8">06 AM-08AM</option>
+                <option value="8-10">08 AM-10 AM</option>
+                <option value="10-12">10 AM-12 AM</option>
+                <option value="12-14">12 PM-02 PM</option>
+                <option value="14-16">02 PM-04 PM</option>
+                <option value="16-18">04 PM-06 PM</option>
+                <option value="18-20">06 PM-08 PM</option>
+                <option value="20-22">08 PM-10 PM</option>
+                <option value="22-24">10 PM-12 PM</option>
             </select>
         </div>
         </div>  
-        <div class="item4">
-            <img class="home" src="./home.png" alt="">
+        <div class="item4" id="">
+            <img class="home" id="home" src="./maxresdefault.jpg" alt="">
         </div>
         <div class="item5">5</div>
-        <div class="item6">Party Time</div>
+        <button class="item6" id="button1">Party Time</button>
        
     </div>
         
@@ -96,7 +126,7 @@
         
     </div>
 
-    <div class="sentence">Lets have some lunch!!</div>
+    <div class="sentence" id="sentence"></div>
     </div>
     <script src="index.js">
     </script>
