@@ -125,9 +125,10 @@ document.getElementById('drop3').addEventListener("change",Check2);
 function Check2() {
     let napTime  = drop3.options[drop3.selectedIndex].value.split("-");
 
-    if(napTime[0] === startInterval2 || napTime[0] === startInterval3 ){
+    if(napTime[0] === startInterval2 || napTime[0] === startInterval1 ){
         alert("Please Select a different range");
-        drop2.value = "null";
+        drop3.value = "null";
+        console.log('issue');
     }
     else{
         startInterval3 = napTime[0];
