@@ -50,40 +50,28 @@ setInterval(showTime, 1000);
         }
     showTime();
 
-
-
+let partyFlag = 0;
 let party_1 = document.getElementById('button1');
 party_1.addEventListener("click",partyEnable);
-party_1.addEventListener("dblclick",partyDisable);
 
-let partyFlag = 0;
+
 function partyEnable() {
     
-
     if(document.getElementById('button1').innerHTML === "Party Time"){
         document.getElementById('home').src = "party2.svg"
         document.getElementById('sentence').innerHTML = "Party time!!!";
-        document.getElementById('button1').innerHTML = "End Party";
+        document.getElementById('button1').innerHTML = "Double Click";
         partyFlag = 1;
     }
-    else if(document.getElementById('button1').innerHTML === "End Party"){
+    else if(document.getElementById('button1').innerHTML === "Double Click"){
         document.getElementById('home').src = "maxresdefault.jpg"
-    document.getElementById('sentence').innerHTML = "";
-    document.getElementById('home').style.paddingTop = "0px";
-    document.getElementById('button1').innerHTML = "Party Time";
-    partyFlag = 0;
+        document.getElementById('sentence').innerHTML = "";
+        document.getElementById('home').style.paddingTop = "0px";
+        document.getElementById('button1').innerHTML = "Party Time";
+        partyFlag = 0;
     }
-
 }
 
-// function partyDisable() {
-//     document.getElementById('home').src = "maxresdefault.jpg"
-//     document.getElementById('sentence').innerHTML = "";
-//     document.getElementById('home').style.paddingTop = "0px";
-//     document.getElementById('button1').innerHTML = "Party Time";
-//     partyFlag = 0;
-
-// }
 
 document.getElementById('drop1').addEventListener("change",Check);
 
@@ -146,7 +134,6 @@ function Check2() {
         endInterval3 = napTime [1];
     }
     document.getElementById('item5').style.display = "block";
-
 }
 
 let val1  = drop1.options[drop1.selectedIndex].value;
