@@ -58,21 +58,32 @@ party_1.addEventListener("dblclick",partyDisable);
 
 let partyFlag = 0;
 function partyEnable() {
-    document.getElementById('home').src = "party2.svg"
-    document.getElementById('sentence').innerHTML = "Party time!!!";
-    document.getElementById('button1').innerHTML = "Double Click";
-    partyFlag = 1;
+    
 
-}
-
-function partyDisable() {
-    document.getElementById('home').src = "maxresdefault.jpg"
+    if(document.getElementById('button1').innerHTML === "Party Time"){
+        document.getElementById('home').src = "party2.svg"
+        document.getElementById('sentence').innerHTML = "Party time!!!";
+        document.getElementById('button1').innerHTML = "End Party";
+        partyFlag = 1;
+    }
+    else if(document.getElementById('button1').innerHTML === "End Party"){
+        document.getElementById('home').src = "maxresdefault.jpg"
     document.getElementById('sentence').innerHTML = "";
     document.getElementById('home').style.paddingTop = "0px";
     document.getElementById('button1').innerHTML = "Party Time";
     partyFlag = 0;
+    }
 
 }
+
+// function partyDisable() {
+//     document.getElementById('home').src = "maxresdefault.jpg"
+//     document.getElementById('sentence').innerHTML = "";
+//     document.getElementById('home').style.paddingTop = "0px";
+//     document.getElementById('button1').innerHTML = "Party Time";
+//     partyFlag = 0;
+
+// }
 
 document.getElementById('drop1').addEventListener("change",Check);
 
