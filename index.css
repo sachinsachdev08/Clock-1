@@ -104,6 +104,7 @@ body{
       text-align: center;
       font-size: 50px;
       font-family: 'Dancing Script', cursive;
+     display: none;
  }
   
   .item6{

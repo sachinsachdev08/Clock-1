@@ -100,6 +100,7 @@ function Check() {
         console.log(startInterval1);
         console.log(endInterval1)
     }
+    document.getElementById('item5').style.display = "block";
 }
 
 
@@ -116,6 +117,8 @@ function Check1() {
         startInterval2 = lunchTime[0];
         endInterval2 = lunchTime [1];
     }
+    document.getElementById('item5').style.display = "block";
+
 }
 
 document.getElementById('drop3').addEventListener("change",Check2);
@@ -131,6 +134,8 @@ function Check2() {
         startInterval3 = napTime[0];
         endInterval3 = napTime [1];
     }
+    document.getElementById('item5').style.display = "block";
+
 }
 
 let val1  = drop1.options[drop1.selectedIndex].value;
