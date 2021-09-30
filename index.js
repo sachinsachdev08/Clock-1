@@ -60,10 +60,10 @@ function partyEnable() {
     if(document.getElementById('button1').innerHTML === "Party Time"){
         document.getElementById('home').src = "party2.svg"
         document.getElementById('sentence').innerHTML = "Party time!!!";
-        document.getElementById('button1').innerHTML = "Double Click";
+        document.getElementById('button1').innerHTML = "End Party";
         partyFlag = 1;
     }
-    else if(document.getElementById('button1').innerHTML === "Double Click"){
+    else if(document.getElementById('button1').innerHTML === "End Party"){
         document.getElementById('home').src = "maxresdefault.jpg"
         document.getElementById('sentence').innerHTML = "";
         document.getElementById('home').style.paddingTop = "0px";
